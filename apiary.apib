@@ -4,7 +4,7 @@ FORMAT: 1A
 WIP on JSON API for Spree.
 
 # Group Products
-Products related resources of the **Products API**
+Products related resources of the **Spree API**
 
 ## Products Collection [/products]
 ### List all Products [GET]
@@ -25,11 +25,11 @@ Products related resources of the **Products API**
 
         { "id": 3, "title": "Buy cheese and bread for breakfast." }
 
-## Note [/product/{id}]
-A single Note object with all its details
+## Product [/product/{id}]
+A single Product object with all its details
 
 + Parameters
-    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+    + id (required, string, `SPREE-123`) ... `sku` of the Product to perform action with.
 
 ### Retrieve a Product [GET]
 + Response 200 (application/json)
@@ -41,6 +41,3 @@ A single Note object with all its details
     + Body
 
             { "id": 2, "title": "Pick-up posters from post-office" }
-
-### Remove a Note [DELETE]
-+ Response 204

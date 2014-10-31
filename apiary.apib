@@ -1,13 +1,13 @@
 FORMAT: 1A
 
-# Spree Products
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+# Spree API
+WIP on JSON API for Spree.
 
-# Group Notes
-Notes related resources of the **Notes API**
+# Group Products
+Products related resources of the **Products API**
 
-## Notes Collection [/notes]
-### List all Notes [GET]
+## Products Collection [/products]
+### List all Products [GET]
 + Response 200 (application/json)
 
         [{
@@ -16,7 +16,7 @@ Notes related resources of the **Notes API**
           "id": 2, "title": "Pick-up posters from post-office"
         }]
 
-### Create a Note [POST]
+### Create a Product [POST]
 + Request (application/json)
 
         { "title": "Buy cheese and bread for breakfast." }
@@ -25,13 +25,13 @@ Notes related resources of the **Notes API**
 
         { "id": 3, "title": "Buy cheese and bread for breakfast." }
 
-## Note [/notes/{id}]
+## Note [/product/{id}]
 A single Note object with all its details
 
 + Parameters
     + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
 
-### Retrieve a Note [GET]
+### Retrieve a Product [GET]
 + Response 200 (application/json)
 
     + Header

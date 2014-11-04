@@ -80,18 +80,7 @@ Products related resources of the **Spree API**
 A single Product object with all its details
 
 + Parameters
-    + id (required, number, `5`) ... `id` of the Product to perform action with.
-
-### Retrieve a Product [GET]
-+ Response 200 (application/json)
-
-    + Header
-
-            X-My-Header: The Value
-
-    + Body
-
-            { "id": 2, "title": "Pick-up posters from post-office" }
+    + id (optional, number, `5`) ... `id` of the Product to perform action with.
 
 ### Create a Product [POST]
 + Request (application/json)
@@ -101,3 +90,20 @@ A single Product object with all its details
 + Response 201 (application/json)
 
         { "id": 3, "title": "Buy cheese and bread for breakfast." }
+
+### Retrieve a Product [GET]
++ Response 200 (application/json)
+
+    + Body
+
+            [Product][]
+
+### Update a Product [PATCH]
++ Response 200 (application/json)
+
+    + Body
+
+            [Product][]
+
+### Delete a Product [DELETE]
++ Response 200 (application/json)

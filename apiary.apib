@@ -3,12 +3,10 @@ FORMAT: 1A
 # Spree API
 WIP on JSON API for Spree.
 
-# Products
+## Products
 Products related resources of the **Spree API**
 
-## Products Collection [/products/{?q}]
-
-### List all Products [GET]
+### List all Products [GET][/products/{?q}]
 + Parameters
     + q (optional, string, `name_like="mug"`) ... Query string parameter to Ransack search
 
@@ -16,7 +14,7 @@ Products related resources of the **Spree API**
 
         [{
           "product": {
-            "id": "SPREE-T-SHIRT",
+            "id": 1,
             "name": "Spree T-Shirt",
             "sku": "SPREE-T-SHIRT",
             "description": "Awesome Spree T-Shirt",
